@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${cinzel.variable} ${inter.variable}`}>
+    <html lang="tr" className={`${cinzel.variable} ${inter.variable}`}>
       <body className="grain">
         <LanguageProvider>{children}</LanguageProvider>
       </body>
