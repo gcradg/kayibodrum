@@ -108,8 +108,7 @@ const defaultProjectDraft = {
 
 const initialSiteInfo = {
   company: "KAYI Bodrum",
-  email: "info@kayidesign.com",
-  phone: "+90 532 123 45 67",
+  phone: "0539 385 9187",
   address: "Bodrum / Türkiye",
   heroEn: "Mediterranean Craftsmanship for Marine & Interior Spaces",
   heroTr: "Marine ve İç Mekanlar için Akdeniz Zanaatkarlığı"
@@ -614,14 +613,6 @@ export default function AdminDashboard() {
                       <input
                         value={siteInfo.address}
                         onChange={(event) => setSiteInfo({ ...siteInfo, address: event.target.value })}
-                        className="mt-2 w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm outline-none focus:border-bronze"
-                      />
-                    </label>
-                    <label className="block">
-                      <span className="text-[0.62rem] uppercase tracking-[0.16em] text-black/45">Email</span>
-                      <input
-                        value={siteInfo.email}
-                        onChange={(event) => setSiteInfo({ ...siteInfo, email: event.target.value })}
                         className="mt-2 w-full rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm outline-none focus:border-bronze"
                       />
                     </label>

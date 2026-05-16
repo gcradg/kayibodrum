@@ -9,14 +9,14 @@ const copy = {
   en: {
     label: "Contact",
     title: "Let's craft something that belongs to the sea.",
-    fields: ["Name", "Email", "Project Type"],
+    fields: ["Name", "Project Type"],
     message: "Message",
     cta: "Start a Conversation"
   },
   tr: {
     label: "İletişim",
     title: "Denize ait hisseden bir şey üretelim.",
-    fields: ["Ad Soyad", "E-posta", "Proje Türü"],
+    fields: ["Ad Soyad", "Proje Türü"],
     message: "Mesaj",
     cta: "Görüşme Başlat"
   }
@@ -44,18 +44,19 @@ export default function Contact() {
           </h2>
           <div className="mt-12 space-y-4 text-sm uppercase tracking-label text-ivory/58">
             <p>Bodrum / Türkiye</p>
-            <p>info@kayidesign.com</p>
-            <p>+90 532 123 45 67</p>
+            <a href="tel:+905393859187" className="transition-colors hover:text-bronze focus-visible:text-bronze">
+              0539 385 9187
+            </a>
           </div>
         </div>
 
         <form className="space-y-8">
-          {t.fields.map((label, index) => (
+          {t.fields.map((label) => (
             <label key={label} className="block">
               <span className="text-[0.62rem] uppercase tracking-label text-bronze">{label}</span>
               <input
                 className="mt-3 w-full border-0 border-b border-ivory/24 bg-transparent px-0 py-4 text-ivory outline-none transition-colors focus:border-bronze"
-                type={index === 1 ? "email" : "text"}
+                type="text"
               />
             </label>
           ))}
