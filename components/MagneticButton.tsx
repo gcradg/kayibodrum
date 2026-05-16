@@ -8,6 +8,7 @@ type MagneticButtonProps = {
   className?: string;
   href?: string;
   type?: "button" | "submit" | "reset";
+  disabled?: boolean;
 };
 
 export default function MagneticButton(props: MagneticButtonProps) {
@@ -25,7 +26,9 @@ export default function MagneticButton(props: MagneticButtonProps) {
     y.set(0);
   };
 
-  const className = `group relative inline-flex overflow-hidden border border-bronze/45 px-7 py-4 text-[0.68rem] uppercase tracking-label text-ivory transition-colors duration-500 hover:text-black ${props.className ?? ""}`;
+  const className = `group relative inline-flex overflow-hidden border border-bronze/45 px-7 py-4 text-[0.68rem] uppercase tracking-label text-ivory transition-colors duration-500 hover:text-black ${props.className ?? ""} ${
+    props.disabled ? "pointer-events-none opacity-45" : ""
+  }`;
   const content = (
     <>
       <span className="absolute inset-y-0 left-0 w-0 bg-bronze transition-all duration-500 ease-luxury group-hover:w-full" />
@@ -54,6 +57,7 @@ export default function MagneticButton(props: MagneticButtonProps) {
       style={{ x, y }}
       onMouseMove={handleMove}
       onMouseLeave={reset}
+      disabled={props.disabled}
     >
       {content}
     </motion.button>
