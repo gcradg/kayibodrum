@@ -109,7 +109,7 @@ const defaultProjectDraft = {
 const initialSiteInfo = {
   company: "KAYI Bodrum",
   phone: "0539 385 9187",
-  address: "Bodrum / Türkiye",
+  address: "Bahçelievler Mah. Gümüşlük Cad. No:39/39 Bodrum Muğla",
   heroEn: "Mediterranean Craftsmanship for Marine & Interior Spaces",
   heroTr: "Marine ve İç Mekanlar için Akdeniz Zanaatkarlığı"
 };

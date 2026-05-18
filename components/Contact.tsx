@@ -50,7 +50,7 @@ export default function Contact() {
             {t.title}
           </h2>
           <div className="mt-12 space-y-4 text-sm uppercase tracking-label text-ivory/58">
-            <p>Bodrum / Türkiye</p>
+            <p>Bahçelievler Mah. Gümüşlük Cad. No:39/39 Bodrum Muğla</p>
             <a href="tel:+905393859187" className="transition-colors hover:text-bronze focus-visible:text-bronze">
               0539 385 9187
             </a>
